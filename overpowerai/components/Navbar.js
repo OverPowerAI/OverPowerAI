@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Saira } from "next/font/google";
+import logo from "../public/assets/logoop.png";
 
 const saira = Saira({ weight: "400", subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ function MobileNav({ open, setOpen }) {
   };
   return (
     <div
-      className={`  flex  dark:border-1 mt-16 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3] backdrop-blur-[9px]  transform ${
+      className={`  flex  dark:border-1 mt-24 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3] backdrop-blur-[9px]  transform ${
         open ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
@@ -85,18 +86,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-50  fixed min-w-full flex bg-gray-300  px-4 lg:px-16 py-4 lg:py-6 items-center">
+    <nav className="z-50  fixed min-w-full h-24 flex bg-transparent backdrop-blur-sm  px-4 lg:px-16 py-4 lg:py-6  items-center">
       <MobileNav open={open} setOpen={setOpen} />
-      <div className="flex w-full  ">
-        <div className="w-3/12 md:w-2/12 flex items-center  ">
-          <div className="flex flex-col justify-center items-center">
-            <div className="text-2xl">OverPowerAI</div>
-          </div>
-        </div>{" "}
+      <div className="flex w-full justify-between md:justify-start">
+      <div className="w-3/12 flex items-center gap-3 ">
+        <Image width={50} height={50} src={logo}></Image>
         <div className={saira.className}>
-          <div className="w-9/12 md:w-10/12 flex justify-end md:justify-start items-center pl-8 lg:pl-0">
+        <div className="text-[24px]">OverPowerAI</div></div>
+      </div>
+        <div className={saira.className}>
+          <div className="w-9/12  md:w-10/12 flex justify-end md:justify-start items-center pl-8 lg:pl-0">
             <div
-              className=" z-50  flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+              className=" z-50 flex relative w-16 h-8 flex-col justify-between items-center md:hidden"
               onClick={() => {
                 setOpen(!open);
               }}
@@ -119,11 +120,11 @@ export default function Navbar() {
               />
             </div>
 
-            <div className="flex w-full justify-between">
-              <div className="hidden md:flex items-center">
+            <div className="flex w-full justify-between ">
+              <div className="hidden md:flex items-center mt-2">
                 <span
                   onClick={() => goToSection("#home")}
-                  className="cursor-pointer tracking-wide  text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4pr-3  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="cursor-pointer tracking-wide   text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-3  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Home
                 </span>
@@ -157,9 +158,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex flex-col justify-center items-center">
-        <div className="ml-3 mt-2 text-white">RUN APP</div>
-      </div>
+    
     </nav>
   );
 }

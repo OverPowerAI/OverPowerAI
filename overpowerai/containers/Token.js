@@ -8,7 +8,7 @@ const saira = Saira({ weight: "400", subsets: ["latin"] });
 
 export default function Token({ id }) {
   return (
-    <div className="md:pt-24 pt-12 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-gradient-to-r from-[#111111] to-[#222222]  bg-cover bg-center ">
+    <div className="md:pt-24 pt-12 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-gradient-to-b from-[#111111] to-[#333333]  bg-cover bg-center ">
       <div className="w-full h-full md:flex items-center justify-center md:p-8 md:gap-3">
         <div  className={saira.className}>
           <div className="order-0">

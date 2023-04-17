@@ -4,6 +4,7 @@ import Hero from '@/containers/Hero'
 import About from '@/containers/About'
 import Vision from '@/containers/Vision'
 import Token from '@/containers/Token'
+import Quote from '@/containers/Quote'
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero id="#home"></Hero>
       <About id="#about"></About>
       <Vision id="#vision"></Vision>
+      <Quote></Quote>
       <Token id="#token"></Token>
       
      

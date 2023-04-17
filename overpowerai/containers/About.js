@@ -7,7 +7,7 @@ const saira = Saira({ weight: "400", subsets: ["latin"] });
 
 export default function About({ id }) {
   return (
-    <div className="md:pt-16 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-white  bg-cover bg-center ">
+    <div className="md:pt-16 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-[#e8f4f8]  bg-cover bg-center ">
       <div className="w-full h-full md:flex items-center justify-center md:p-8 md:gap-3">
         <div className="w-full flex justify-center ">
           <Image src={ai} className="md:min-w-[300px] w-[300px] py-12 "></Image>
