@@ -15,7 +15,8 @@ export default function Home() {
     <>
       
       <main className="flex min-h-screen flex-col bg-grey-300 ">
-        <Follow></Follow>
+        <div className="md:flex hidden"><Follow></Follow></div>
+        
         <Hero id="#home"></Hero>
         <About id="#about"></About>
         <Vision id="#concept"></Vision>
