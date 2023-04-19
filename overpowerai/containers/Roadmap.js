@@ -2,7 +2,7 @@ import Road from "@/components/Road";
 
 export default function Roadmap() {
   return (
-    <div className="pt-32 pl-20  gap-4 grid grid-cols-2  justify-between text-xl items-center w-full h-full bg-gradient-to-t from-[#111111] to-[#333333] bg-cover bg-center">
+    <div className="pt-32 p-8 md:p-0 md:pl-20 grid grid-cols-1 md:grid-cols-2  justify-between text-xl items-center w-full h-full bg-gradient-to-t from-[#111111] to-[#333333] bg-cover bg-center">
       <div className="flex flex-col pr-20 pb-12">
         <div className="text-2xl py-2 text-white">
           OverPowerAI Launch Phase (Q1):
