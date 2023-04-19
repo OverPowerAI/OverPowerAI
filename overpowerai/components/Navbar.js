@@ -93,6 +93,7 @@ export default function Navbar() {
       <div className="w-3/12 flex items-center gap-3 ">
         <Image width={50} height={50} src={logo}></Image>
         <div className={saira.className}>
+          <div className="text-white text-lg">OverPowerAI</div>
         </div>
       </div>
         <div className={saira.className}>

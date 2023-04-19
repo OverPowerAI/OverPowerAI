@@ -24,24 +24,18 @@ export default function Token({ id }) {
                 initiatives, and creates a liquidity pool for the token. The
                 goal of the project is to create a secure, reliable and valuable
                 token for the community, team and investors.
-                <div className="pt-8">Total Supply: 1,000,000,000 $OPAI</div>
-                <div className="pt-4">Tax Breakdown:
-                    <ul>
-                        <li>1% Buybacks and burns</li>
-                        <li>2% Development</li>
-                        <li>2% Marketing</li>
-                    </ul>
-                </div>
+                <div className="pt-8">Total Supply: 10,000,000 $OPAI</div>
+               
                 <div className="md:flex justify-between items-center my-8">
                   <div className="flex flex-col ease-in-out duration-150 justify-center items-center">
                     <div className=" md:w-[200px] md:h-[200px] w-[100px] h-[100px] hover:text-4xl  rounded-full bg-slate-600 hover:bg-slate-200 ease-in-out hover:text-black duration-150 flex items-center justify-center">
-                      %5
+                      %1
                     </div>
                     <div className="pt-6 ">Buy Tax</div>
                   </div>
                   <div className="flex flex-col  ease-in-out duration-150 justify-center items-center mt-4">
                     <div className=" md:w-[200px] md:h-[200px] w-[100px] h-[100px] rounded-full hover:text-4xl bg-slate-600 hover:bg-slate-200 ease-in-out hover:text-black duration-150 flex items-center justify-center">
-                      %5
+                      %1
                     </div>
                     <div className="pt-6">Sell Tax</div>
                   </div>
