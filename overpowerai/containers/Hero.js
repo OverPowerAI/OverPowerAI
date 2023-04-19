@@ -6,6 +6,10 @@ import { ArrowLeft, ArrowRight, CheckSquare, Lock, Terminal, TrendingUp } from "
 const saira = Saira({ weight: "400", subsets: ["latin"] });
 import styles from "../styles/Hero.module.css";
 import Follow from "@/components/Follow";
+import Link from "next/link";
+
+
+
 
 export default function Hero({ id }) {
   return (
@@ -23,6 +27,8 @@ export default function Hero({ id }) {
             
             <TrendingUp></TrendingUp>
             </div>
+            
+           
             <div className="text-sm md:text-lg font-light py-4">YOU ARE SAFE WITH US !</div>
             <div className="md:hidden flex"><Follow></Follow></div>
             
