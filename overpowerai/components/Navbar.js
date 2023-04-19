@@ -3,8 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Saira } from "next/font/google";
 import logo from "../public/assets/logoop.png";
+import { ArrowUpRight } from "react-feather";
 
-const saira = Saira({ weight: "400", subsets: ["latin"] });
+const saira = Saira({ weight: "600", subsets: ["latin"] });
 
 function MobileNav({ open, setOpen }) {
   const goToSection = (id) => {
@@ -16,11 +17,11 @@ function MobileNav({ open, setOpen }) {
   };
   return (
     <div
-      className={`  flex  dark:border-1 mt-24 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-[#000000B3] backdrop-blur-[9px]  transform ${
+      className={`  flex  dark:border-1 mt-24 absolute top-0 right-0 h-screen border-l border-[#FFFFFF26] w-64 bg-transparent backdrop-blur-lg transform ${
         open ? "translate-x-0" : "translate-x-full"
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
-      <div className="flex flex-col font-bold text-end w-full  ">
+      <div className="flex flex-col font-bold text-end w-full bg-[#ffffff33] backdrop-blur-[15px]  ">
         <div className=" flex flex-col  items-center text-white  py-4">
           <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
           <div className={saira.className}>
@@ -86,16 +87,16 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="z-50  fixed min-w-full h-24 flex bg-transparent backdrop-blur-sm  px-4 lg:px-16 py-4 lg:py-6  items-center">
+    <nav className="z-50  fixed min-w-full h-24 flex bg-transparent backdrop-blur-sm  px-4 lg:px-16 py-4 lg:py-6   items-center">
       <MobileNav open={open} setOpen={setOpen} />
-      <div className="flex w-full justify-between md:justify-start">
+      <div className="flex w-full justify-between ">
       <div className="w-3/12 flex items-center gap-3 ">
         <Image width={50} height={50} src={logo}></Image>
         <div className={saira.className}>
-        <div className="text-[24px]">OverPowerAI</div></div>
+        </div>
       </div>
         <div className={saira.className}>
-          <div className="w-9/12  md:w-10/12 flex justify-end md:justify-start items-center pl-8 lg:pl-0">
+          <div className="w-9/12  md:w-10/12 flex justify-end md:justify-end items-center pl-8 lg:pl-0">
             <div
               className=" z-50 flex relative w-16 h-8 flex-col justify-between items-center md:hidden"
               onClick={() => {
@@ -124,35 +125,46 @@ export default function Navbar() {
               <div className="hidden md:flex items-center mt-2">
                 <span
                   onClick={() => goToSection("#home")}
-                  className="cursor-pointer tracking-wide   text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-3  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="cursor-pointer tracking-wide text-lg lg:text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-3  text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc] md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Home
                 </span>
                 <span
                   onClick={() => goToSection("#about")}
-                  className="cursor-pointer tracking-wide  text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="cursor-pointer tracking-wide  text-lg lg:text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc]  md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About
                 </span>
 
                 <span
-                  onClick={() => goToSection("#vision")}
-                  className="cursor-pointer tracking-wide text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={() => goToSection("#concept")}
+                  className="cursor-pointer tracking-wide text-lg lg:text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc]  md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Vision
+                  Concept
                 </span>
 
                 <span
                   onClick={() => goToSection("#token")}
-                  className="cursor-pointer tracking-wide  text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="cursor-pointer tracking-wide  text-lg lg:text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc] md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Tokenomics
                 </span>
-                <span className="cursor-pointer tracking-wide  text-lg lg:text-lg block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <Link href="https://overpowerai.gitbook.io/overpowerai-whitepaper-v1/overpowerai-op-solutions/overview">
-                    <div className=" ">Whitepaper</div>
+                <span
+                  onClick={() => goToSection("#token")}
+                  className="cursor-pointer tracking-wide  text-lg lg:text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc] md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Roadmap
+                </span>
+                <span className="cursor-pointer tracking-wide  text-lg lg:text-sm block py-2 mt-1 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc] md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  <Link href="https://overpowerai.gitbook.io/overpowerai-whitepaper-v1/overpowerai-op-solutions/overview" className="flex">
+                    <div className=" ">Docs</div>
+                    <ArrowUpRight width={18}></ArrowUpRight>
                   </Link>
                 </span>
+                <div className={saira.className}>
+                <div className="w-28 h-10 rounded-lg bg-[#36d2cd] text-white flex justify-center items-center text-sm hover:text-lg ease-in-out duration-200">
+                  Auditor App
+                </div></div>
               </div>
             </div>
           </div>

@@ -26,15 +26,3 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.arrow{
-
-}
-
-@keyframes arrow{
-    0%{
-      transform: translateX(100%);
-    }
-    100%{
-      transform: translateX(0%);
-    }
-}

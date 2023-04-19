@@ -7,17 +7,17 @@ const saira = Saira({ weight: "400", subsets: ["latin"] });
 
 export default function About({ id }) {
   return (
-    <div className="md:pt-16 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-[#e8f4f8]  bg-cover bg-center ">
+    <div className="md:pt-16 pb-12 px-12 md:px-20 flex flex-col text-xl  justify-start  items-start w-screen h-full bg-[#171A1D] bg-cover bg-center ">
       <div className="w-full h-full md:flex items-center justify-center md:p-8 md:gap-3">
         <div className="w-full flex justify-center ">
           <Image src={ai} className="md:min-w-[300px] w-[300px] py-12 "></Image>
         </div>
         <div id={id} className={saira.className}>
           <div className="order-0">
-            <div className="text-2xl md:text-4xl lg:text-5xl text-black md:pl-12 ">
+            <div className="text-2xl md:text-4xl lg:text-5xl text-white md:pl-12 ">
               ABOUT
             </div>
-            <div className="text-lg md:text-xl lg:text-md text-black pt-8 md:pl-12 ">
+            <div className="text-lg md:text-xl lg:text-md text-[#AAAAAA] pt-8 md:pl-12 ">
               OverpowerAI is a revolutionary platform that offers a
               comprehensive suite of tools to protect users from scams and
               ensure the security of their transactions on the BSC network. The

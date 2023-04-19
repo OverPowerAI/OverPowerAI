@@ -13,7 +13,7 @@ export default function Vision({ id }) {
         <div id={id} className={saira.className}>
           <div className="order-0">
             <div className="text-2xl md:text-4xl lg:text-5xl text-white w-full flex justify-center ">
-              OUR VISION
+              Concepts of Action
             </div>
             <div className="md:flex gap-3 pt-16">
               <div className="text-lg md:text-xl w-full md:w-1/3 md:mt-0 mt-8 lg:text-md flex-col justify-center text-center  items-center text-white p-8 border hover:border-white border-gray-500 ease-in-out duration-200 rounded-lg">

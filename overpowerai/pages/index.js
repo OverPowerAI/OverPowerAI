@@ -17,7 +17,7 @@ export default function Home() {
      
       <Hero id="#home"></Hero>
       <About id="#about"></About>
-      <Vision id="#vision"></Vision>
+      <Vision id="#concept"></Vision>
       <Quote></Quote>
       <Token id="#token"></Token>
       
