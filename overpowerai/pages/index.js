@@ -7,6 +7,7 @@ import Token from "@/containers/Token";
 import Quote from "@/containers/Quote";
 import Follow from "@/components/Follow";
 import Head from "next/head";
+import Roadmap from "@/containers/Roadmap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
         <Vision id="#concept"></Vision>
         <Quote></Quote>
         <Token id="#token"></Token>
+        <Roadmap></Roadmap>
       </main>
     </>
   );
