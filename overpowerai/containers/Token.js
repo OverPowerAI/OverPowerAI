@@ -41,8 +41,8 @@ export default function Token({ id }) {
                     <div className="pt-6">Sell Tax</div>
                   </div>
                 </div>
-                <div>
-                  <Image src={pie} className="min-w-[300px]"></Image>
+                <div className="w-full flex justify-center">
+                  <Image src={pie} className="min-w-[400px]"></Image>
                 </div>
               </div>
             </div>
