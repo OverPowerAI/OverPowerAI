@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ai from "../public/assets/aboutai.png";
+import pie from "../public/assets/tokenmetric.png";
 
 import { Saira } from "next/font/google";
 import { Lock, Terminal, TrendingUp } from "react-feather";
@@ -39,6 +40,9 @@ export default function Token({ id }) {
                     </div>
                     <div className="pt-6">Sell Tax</div>
                   </div>
+                </div>
+                <div>
+                  <Image src={pie} className="min-w-[300px]"></Image>
                 </div>
               </div>
             </div>
