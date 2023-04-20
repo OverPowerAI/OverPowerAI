@@ -41,7 +41,7 @@ function MobileNav({ open, setOpen }) {
             <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
             <span
               className="text-xl font-normal cursor-pointer"
-              onClick={() => goToSection("#vision")}
+              onClick={() => goToSection("#concept")}
             >
               <div className="pb-2 px-6 py-2">Concept</div>
             </span>
