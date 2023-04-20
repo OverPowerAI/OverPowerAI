@@ -42,7 +42,7 @@ export default function Token({ id }) {
                   </div>
                 </div>
                 <div className="w-full flex justify-center">
-                  <Image src={pie} className="min-w-[400px]"></Image>
+                  <Image src={pie} className="min-w-[380px]"></Image>
                 </div>
               </div>
             </div>

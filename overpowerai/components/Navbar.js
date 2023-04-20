@@ -43,7 +43,7 @@ function MobileNav({ open, setOpen }) {
               className="text-xl font-normal cursor-pointer"
               onClick={() => goToSection("#vision")}
             >
-              <div className="pb-2 px-6 py-2">Vision</div>
+              <div className="pb-2 px-6 py-2">Concept</div>
             </span>
             <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
             <span
@@ -53,11 +53,19 @@ function MobileNav({ open, setOpen }) {
               <div className=" px-6 py-2">Tokenomics</div>
             </span>
             <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
+            <span
+              className="text-xl font-normal cursor-pointer"
+              onClick={() => goToSection("#roadmap")}
+            >
+              <div className=" px-6 py-2">Roadmap</div>
+            </span>
+            <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
             <span className="text-xl font-normal cursor-pointer">
               <Link href="https://overpowerai.gitbook.io/overpowerai-whitepaper-v1/overpowerai-op-solutions/overview">
                 <div className=" px-6 py-2">Whitepaper</div>
               </Link>
             </span>
+            
 
             <span
               className="text-xl font-normal  "
@@ -68,6 +76,12 @@ function MobileNav({ open, setOpen }) {
               }
             ></span>
             <div className="w-64 h-[1px] bg-[#FFFFFF26]"></div>
+            <div className={saira.className}>
+                  <Link href="https://app.overpowerai.com/">
+                    <div className="w-full flex justify-center pt-4">
+                <div className="w-28 h-10 rounded-lg bg-[#36d2cd] text-white flex justify-center items-center text-sm hover:text-lg ease-in-out duration-200">
+                  Auditor App
+                </div></div></Link></div>
           </div>
         </div>
       </div>
@@ -151,7 +165,7 @@ export default function Navbar() {
                   Tokenomics
                 </span>
                 <span
-                  onClick={() => goToSection("#token")}
+                  onClick={() => goToSection("#roadmap")}
                   className="cursor-pointer tracking-wide  text-sm block py-2 pl-3 mx-1 lg:mx-4 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#36d2dc] md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Roadmap

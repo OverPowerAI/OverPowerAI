@@ -23,7 +23,7 @@ export default function Home() {
         <Vision id="#concept"></Vision>
         <Quote></Quote>
         <Token id="#token"></Token>
-        <Roadmap></Roadmap>
+        <Roadmap id="#roadmap"></Roadmap>
       </main>
     </>
   );
