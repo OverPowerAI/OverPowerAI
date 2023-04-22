@@ -25,7 +25,9 @@ export default function Token({ id }) {
                 initiatives, and creates a liquidity pool for the token. The
                 goal of the project is to create a secure, reliable and valuable
                 token for the community, team and investors.
-                <div className="pt-8">Total Supply: 10,000,000 $OPAI</div>
+                <div className="pt-8 text-white">Total Supply: 10,000,000 $OPAI</div>
+                <div className="pt-8 text-white">ALL TOKENS WILL BE LOCKED.</div>
+
                
                 <div className="md:flex justify-between items-center my-8">
                   <div className="flex flex-col ease-in-out duration-150 justify-center items-center">
